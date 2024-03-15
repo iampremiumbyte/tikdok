@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$TikDok</title>
+  </head>
+  <body>
+    <img src="/assets/img/page2.png" usemap="#image-map" />
+
+    <a href="/page3.html">
+      <div class="box" id="box1"></div>
+    </a>
+    <a href="/page4.html">
+      <div class="box" id="box2"></div>
+    </a>
+    <a href="/page4.html">
+      <div class="box" id="box3"></div>
+    </a>
+    <a href="/page6.html">
+      <div class="box" id="box4"></div>
+    </a>
+
+    <map name="image-map">
+      <area
+        id="area1"
+        target=""
+        alt="socials"
+        title="socials"
+        href="/page3.html"
+        coords="60,37,243,98"
+        shape="rect"
+      />
+      <area
+        id="area2"
+        target=""
+        alt="buy"
+        title="buy"
+        href=""
+        coords="35,113,403,158"
+        shape="rect"
+      />
+      <area
+        id="area3"
+        target=""
+        alt="tokenomics"
+        title="tokenomics"
+        href=""
+        coords="47,174,391,227"
+        shape="rect"
+      />
+      <area
+        id="area4"
+        target=""
+        alt="about"
+        title="about"
+        href=""
+        coords="815,48,1108,309"
+        shape="rect"
+      />
+    </map>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
